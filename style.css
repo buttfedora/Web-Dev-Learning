@@ -1,7 +1,16 @@
 * {
   box-sizing: border-box;
-}  
-.header {
+}
+
+body {
+  background-color: Lightblue;
+  background-image: url("https://libraryapps.fairfield.edu/cdn/images/stacks.jpg");
+}
+.header, .menu {
+  border: solid 2px black;
   text-align: center;
-  background-image: url('ADDURL')
-}  
+  width: 800px;
+  top: 40px;
+  margin: 20px auto;
+  color: blue;
+}
