@@ -9,4 +9,15 @@
 body {
   text-align: center;
   background-image: url('discworld_main.jpg')
+
+body {
+  background-color: Lightblue;
+  background-image: url("https://libraryapps.fairfield.edu/cdn/images/stacks.jpg");
 }
+.header, .menu {
+  border: solid 2px black;
+  text-align: center;
+  width: 800px;
+  top: 40px;
+  margin: 20px auto;
+  color: blue;
