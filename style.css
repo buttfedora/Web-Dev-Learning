@@ -2,20 +2,12 @@
   box-sizing: border-box;
   font-family: 'Coiny', cursive;
 }
-.header {
-  text-align: center;
-  color: blue;
-
-}
-body {
-  text-align: center;
-  background-image: url('discworld_main.jpg')
 
 body {
   background-color: Lightblue;
   background-image: url("https://libraryapps.fairfield.edu/cdn/images/stacks.jpg");
 }
-.header, .menu {
+header, .menu {
   border: solid 5px black;
   text-align: center;
   width: 800px;
@@ -23,6 +15,10 @@ body {
   margin: 20px auto;
   color: blue;
   font-size: 40px;
-  background-color: Lightblue;
   border-radius: 15px 50px;
+  opacity: .50;
+}
+
+.header {
+  background-color: Lightblue;
 }

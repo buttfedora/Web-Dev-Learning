@@ -7,7 +7,19 @@ body {
   background-color: Lightblue;
   background-image: url("https://libraryapps.fairfield.edu/cdn/images/stacks.jpg");
 }
-header {
+#abouthomereturn {
+  border: solid 5px black;
+  text-align: center;
+  width: 800px;
+  top: 40px;
+  margin: 20px auto;
+  color: blue;
+  font-size: 40px;
+  background-color: Lightblue;
+  border-radius: 15px 50px;
+}
+
+#header1 {
   border: solid 5px black;
   text-align: center;
   width: 800px;
