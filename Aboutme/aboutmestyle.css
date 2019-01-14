@@ -16,11 +16,7 @@ body {
 
 }
 .AboutMeTop {
-  margin: 50px auto;
-  width: 50%;
-  position: static;
-  align: center;
-  padding: 40px;
+    padding: 20px 40px 20px 40px;
 }
 
 #abouthomereturn {
@@ -36,18 +32,10 @@ body {
 }
 
 #header1 {
-  border: solid 5px black;
-  text-align: center;
-  width: 800px;
-  top: 40px;
-  margin: 20px auto;
-  color: blue;
-  font-size: 30px;
-  background-color: Lightblue;
-  border-radius: 15px 50px;
+  margin: 20px 40px 20px 40px;
 }
 
 #turtleworld {
-
+  margin: 20px 40px 20px 40px;
 
 }
