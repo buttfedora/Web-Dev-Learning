@@ -32,13 +32,15 @@ body {
   height: 250px;
   width: 500px;
   margin: 0 auto;
+  background: rgba(200, 200, 200, .95);
 }
 
 #catchphrase {
   font-family: 'Coiny', cursive;
+  font-weight: 100;
 }
 
-#abouthomereturn {
+.returnLink {
   text-align: center;
   align: left;
   width: 200px;
@@ -49,10 +51,11 @@ body {
   background-color: white;
   border-radius: 85%;
 }
+#abouthomereturn:hover {
 
+}
 #header1 {
   margin: 20px 40px 20px 40px;
-
 }
 
 #turtleworld {
