@@ -6,7 +6,6 @@
 body {
   padding: 0;
   margin: 0;
-  background: #F7F7F7;
   /* Old browsers */
   background: -moz-linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
   /* FF3.6-15 */
@@ -15,23 +14,40 @@ body {
   background: linear-gradient(45deg, #F7F7F7 0%, #EAE0D5 100%);
   background: url("../colorfuldisc.jpg");
   background-repeat: no-repeat;
-
+  background-attachment: fixed;
 
 }
+
 .AboutMeTop {
     padding: 20px 40px 20px 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    height: 250px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.topicLayout {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  height: 250px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#catchphrase {
+  font-family: 'Coiny', cursive;
 }
 
 #abouthomereturn {
-  border: solid 5px black;
   text-align: center;
-  width: 800px;
+  align: left;
+  width: 200px;
   top: 40px;
-  margin: 20px auto;
+  margin: 10px auto;
   color: blue;
-  font-size: 40px;
-  background-color: Lightblue;
-  border-radius: 100%;
+  font-size: 10px;
+  background-color: white;
+  border-radius: 85%;
 }
 
 #header1 {
