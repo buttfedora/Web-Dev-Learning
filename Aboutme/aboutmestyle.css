@@ -25,6 +25,7 @@ body {
     width: 500px;
     margin: 0 auto;
     text-align: center;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
 }
 
 .topicLayout {
