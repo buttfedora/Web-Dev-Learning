@@ -15,7 +15,7 @@
         grid-gap: 10px;
 /* Define the areas here, assign the html zones to the grid here */
         grid-template-areas:
-        "header header" 
+        "header header"
         "nav nav"
         "left right"
         "footer footer";
@@ -92,9 +92,11 @@
       height: 500px;
       width: 500px;
       grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
-      /* grid-template: Rows / columns */
+      /* grid-template: Rows (how many times, sizes)  / columns */
       grid-gap: 5px;
       /* grid gap rows / columns */
+      justify-items: center; /* how to align on the row */
+      justify-content: space-between; /* how to align on the column */
     }
 
     .a {
@@ -113,7 +115,7 @@
      grid-column: 2 / span 6;
      grid-row: 2 / span 3;
 
-      /* grid-area: Row start / column start / row end / column end */
+      /* grid-area: Row start / column start / row end +1 / column end +1 */
 
     }
     .c {
