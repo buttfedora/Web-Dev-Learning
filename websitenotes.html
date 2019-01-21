@@ -7,6 +7,52 @@
   <body>
     <style>
 
+      .container {
+        display: grid;
+        max-width: 900px;
+        position: relative;
+        margin: auto;
+        grid-gap: 10px;
+/* Define the areas here, assign the html zones to the grid here */
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "left right"
+        "footer footer";
+/* Each added numerical adds a column or row */
+        grid-template-columns: 200px 400px;
+        grid-template-rows: 150px 200px 600px 200px;
+      }
+
+      h1, h2 {
+        font-family: monospace;
+        text-align: center;
+      }
+
+      header {
+        background-color: dodgerblue;
+        grid-area: header;
+      }
+
+      nav {
+        background-color: beige;
+        grid-area: nav;
+      }
+
+      .left {
+        background-color: dodgerblue;
+        grid-area: left;
+      }
+
+      .right {
+        background-color: beige;
+        grid-area: right;
+      }
+
+      footer {
+        background-color: dodgerblue;
+        grid-area: footer;
+      }
       .balls{
         border-radius: 50%;
         background: linear-gradient(
@@ -46,9 +92,11 @@
       height: 500px;
       width: 500px;
       grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
-      /* grid-template: Rows / columns */
+      /* grid-template: Rows (how many times, sizes)  / columns */
       grid-gap: 5px;
       /* grid gap rows / columns */
+      justify-items: center; /* how to align on the row */
+      justify-content: space-between; /* how to align on the column */
     }
 
     .a {
@@ -67,7 +115,7 @@
      grid-column: 2 / span 6;
      grid-row: 2 / span 3;
 
-      /* grid-area: Row start / column start / row end / column end */
+      /* grid-area: Row start / column start / row end +1 / column end +1 */
 
     }
     .c {
@@ -75,6 +123,23 @@
     }
 
     </style>
+    <div class="container">
+    <header>
+      <h1>Header</h1>
+    </header>
+    <nav>
+      <h1>Nav</h1>
+    </nav>
+    <section class="left">
+      <h2>Left</h2>
+    </section>
+    <section class="right">
+      <h2>Right</h2>
+    </section>
+    <footer>
+      <h1>Footer</h1>
+    </footer>
+  </div>
 
     <div class="balls" id="ball1"></div>
     <div class="balls" id="ball2"></div>
