@@ -93,6 +93,8 @@
       width: 500px;
       grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
       /* grid-template: Rows (how many times, sizes)  / columns */
+      grid-auto-columns: 50px; /* same template as grid template, adds implicit
+      columns (rows for rows) */
       grid-gap: 5px;
       /* grid gap rows / columns */
       justify-items: center; /* how to align on the row */
@@ -100,6 +102,8 @@
       align-items: center; /* end, center, start, stretch , aligns the content
        inside of the items */
       align-content: center; /* aligns the content boxes */
+      grid-auto-flow: row; /* when more elementd are created this rule decides
+      how to add the elements */
     }
 
     .a {
