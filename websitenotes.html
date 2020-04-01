@@ -127,6 +127,7 @@ vmax: 100vmax would be 100% of the viewport's bigger dimension (height vs. width
       height: 500px;
       width: 500px;
       grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
+      /* grid-template: repeat(autofill, minmax(90px, 1fr)) auto-fill keeps adding, auto-fit fits it. */
       /* grid-template: Rows (how many times, sizes)  / columns */
       grid-auto-columns: 50px; /* same template as grid template, adds implicit
       columns (rows for rows) */
@@ -137,7 +138,7 @@ vmax: 100vmax would be 100% of the viewport's bigger dimension (height vs. width
       align-items: center; /* end, center, start, stretch , aligns the content
        inside of the items */
       align-content: center; /* aligns the content boxes */
-      grid-auto-flow: row; /* when more elementd are created this rule decides
+      grid-auto-flow: row; /* when more elements are created this rule decides
       how to add the elements */
     }
 
